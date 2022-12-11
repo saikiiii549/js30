@@ -14,13 +14,13 @@ function smartPhones(phone) {
     console.log(phone)
 }
 
-function foo(x,y,z) {
+function es6_foo(x,y,z) {
 	console.log( x, y, z );
 }
-function foo () {
+function es6_foo () {
 	alert(‘Hello’)
 }
-function foo (a,b){
+function es6_foo (a,b){
 	let m = a+b*100
 	return m
 }
