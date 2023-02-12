@@ -1,0 +1,19 @@
+
+footer{
+     position: relative;
+     height: auto;
+     padding: 50px 100px;
+     background: darkorchid;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+    }
+.row{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+.container{
+    
+}
