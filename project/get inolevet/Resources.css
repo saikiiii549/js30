@@ -1,0 +1,13 @@
+.list_select{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.list_select div{
+    text-align: center;
+    margin: 20px 10px;
+}
+.list_select div a {
+    text-decoration: none;
+}
