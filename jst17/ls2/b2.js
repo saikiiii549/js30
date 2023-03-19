@@ -1,3 +1,5 @@
+https://docs.google.com/document/d/1fASkBnSu4QrvgfnROstlksPFqkS-X9S91cGz0MQQuF8/edit
+
 //bai1
 const arr1 = [1,2,3,5]
 const arr2 = [5,3,2,1]
