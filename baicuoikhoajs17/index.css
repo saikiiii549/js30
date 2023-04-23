@@ -1,0 +1,16 @@
+.card-list{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+
+}
+
+    
+
+body{
+    margin: 0 auto    ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
