@@ -8,16 +8,33 @@
     <title>Login-.-</title>
 </head>
 <body>
-    <div class="index">
-    <h3 id="title"> Create your account</h3>
-    <input placeholder="Enter your email">
-    <input placeholder="Enter your name">
-    <input placeholder="Enter your pasword"type="password"> 
-    <input placeholder="Enter your password" type="password">
-    <input type="submit" value="Register">
-    <p> you already have an account</p>
-    </div>
-<script src=".//index.js"></script>
+    <div id="app" ></div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAGztHiLvOrGr4Ys7EmM_0Mldlv-3nmdBY",
+          authDomain: "signin-firebase-cdc0a.firebaseapp.com",
+          databaseURL: "https://signin-firebase-cdc0a-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "signin-firebase-cdc0a",
+          storageBucket: "signin-firebase-cdc0a.appspot.com",
+          messagingSenderId: "1020147299604",
+          appId: "1:1020147299604:web:2fd01aeae3fa1bdaabbe01",
+          measurementId: "G-6374ZZKS2D"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+<script src=".//index.js" type="module"> </script>
 
 </body>
 </html>

@@ -1,16 +1,15 @@
-import Register from "./register"
+import Login from "./login.js"
 
-class Login {
+class Register {
     $containerDiv
     $titleHeader
     $signupForm
     $emailInputTxtEmail
+    $nameInputTxt
     $passInputPass
-    $submitBtn
+    $confirmPassInputPass
     $gotoSigninLink
-    $containerDiv
-    $titleHeader
-    $signupForm
+    $submitBtn
 
     constructor() {
         this.$emailInputTxtEmail = document.createElement("input");
@@ -31,6 +30,10 @@ class Login {
         this.$passInputPass.innerHTML = "register"
         this.$submitBtn.addEventListener("click", this.handleSubmit);
 
+        this.$confirmPassInputPass = document.createElement("input");
+        this.$confirmPassInputPass.type = "password";
+        this.$confirmPassInputPass.placeholder = "confirm your password?"
+
         this.$gotoSigninLink = document.createElement("a");
         this.$gotoSigninLink.innerHTML = "You already have account? signin now?";
         this.$gotoSigninLink.addEventListener("click",this.gotosignin);
@@ -42,35 +45,51 @@ class Login {
         this.$titleHeader.innerHTML = "create your account";
         
         this.$signupForm = document.createElement("from")
-    }
 
-    initREnder = (container) => {
-        this.$signupForm.appendChild(this.$emailInputTxtEmail);
-        this.$signupForm.appendChild(this.$nameInputTxt);
-        this.$signupForm.appendChild(this.$passInputPass);
-        this.$signupForm.appendChild(this.$confirmPassInputPass);
-        this.$signupForm.appendChild(this.$submitBtn);
-        
-        this.$containerDiv.appendChild(this.$titleHeader);
-        this.$containerDiv.appendChild(this.$signupForm);
-        this.$containerDiv.appendChild(this.$gotoSigninLink);
-        
-        container.appendChild(this.$containerDiv)
-        
-        
-        
-        }
-        
-        
-        handleSubmit = (e) => {
-        
-        }
-        gotosignin = () =>  {
-            const signup = new Register();
-            
-        
-        }
+
+    }
+initREnder = (container) => {
+this.$signupForm.appendChild(this.$emailInputTxtEmail);
+this.$signupForm.appendChild(this.$nameInputTxt);
+this.$signupForm.appendChild(this.$passInputPass);
+this.$signupForm.appendChild(this.$confirmPassInputPass);
+this.$signupForm.appendChild(this.$submitBtn);
+
+this.$containerDiv.appendChild(this.$titleHeader);
+this.$containerDiv.appendChild(this.$signupForm);
+this.$containerDiv.appendChild(this.$gotoSigninLink);
+
+container.appendChild(this.$containerDiv)
+
+
 
 }
 
-export default Login;
+
+handleSubmit = (e) => {
+    import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+}
+gotosignin = () =>  {
+    const login = new Login();
+    
+
+}
+
+}
+
+
+
+export default Register;
