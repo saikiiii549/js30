@@ -63,11 +63,42 @@ container.appendChild(this.$containerDiv)
 
 
 
-}
+}q
 
 
 handleSubmit = (e) => {
-    import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+// validation
+const email = this.$emailInputEmail.value;
+const password = this.$passInputPass.value;
+const confirmPass = this.$confirmPassInputPass.value;
+const userName = this.$nameInputTxt.value;
+
+if(email == "") {
+ prompt("Email cannot be empty!");
+ return;
+}
+if(password.length < 6) {
+ prompt("Password must be least 6 letters!");
+ return;
+}
+if(userName == "") {
+ prompt("Username cannot be empty!");
+ return;
+}
+if(confirmPass == "") {
+ prompt("Confirm your password!");
+ return;
+}
+if(password != confirmPass) {
+ prompt("Your password not match!");
+ return;
+}
+  
+}
+    
+
+
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
@@ -79,6 +110,7 @@ handleSubmit = (e) => {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        const alert = prompt
         // ..
       });
 }
