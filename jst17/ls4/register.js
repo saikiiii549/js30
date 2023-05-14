@@ -1,4 +1,5 @@
 import Login from "./login.js"
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 
 class Register {
     $containerDiv
@@ -63,7 +64,7 @@ container.appendChild(this.$containerDiv)
 
 
 
-}q
+}
 
 
 handleSubmit = (e) => {
@@ -74,31 +75,30 @@ const confirmPass = this.$confirmPassInputPass.value;
 const userName = this.$nameInputTxt.value;
 
 if(email == "") {
- prompt("Email cannot be empty!");
+alert("Email cannot be empty!");
  return;
 }
 if(password.length < 6) {
- prompt("Password must be least 6 letters!");
+  alert("Password must be least 6 letters!");
  return;
 }
 if(userName == "") {
- prompt("Username cannot be empty!");
+  alert("Username cannot be empty!");
  return;
 }
 if(confirmPass == "") {
- prompt("Confirm your password!");
+  alert("Confirm your password!");
  return;
 }
 if(password != confirmPass) {
- prompt("Your password not match!");
+  alert("Your password not match!");
  return;
 }
   
-}
+
     
 
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)

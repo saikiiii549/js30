@@ -1,4 +1,5 @@
 import Register from "./register"
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 
 class Login {
     $containerDiv
@@ -63,7 +64,18 @@ class Login {
         
         
         handleSubmit = (e) => {
-            import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+          const email = this.$emailInputEmail.value;
+          const password = this.$passInputPass.value;
+        
+          
+          if(email == "") {
+          alert("Email cannot be empty!");
+           return;
+          }
+          if(password.length < 6) {
+            alert("Password must be least 6 letters!");
+           return;
+          }
 
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
