@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Đề kiểm tra CP buổi 8 - JSI</title>
+</head>
+<body> 
+    <div>
+        <div>ss</div>
+    <button type="button" onclick="get()">Start</button>
+    <button type="button" onclick="get()">stop</button>
+    <p id="result"></p>
+   
+   
+   <script src="ktra8.js" type="text/javascript">
+        function get() {
+            var date = new Date(01, 34, 50, 02, 03, 23, 02);
+            document.getElementById('result').innerText = date.getMinutes() + ":" + date.getHours();
+        }
+        const myInterval = setInterval(myTimer, 1000);
+
+function myTimer() {
+  const date = new Date();
+  document.getElementById("result").innerHTML = date.toLocaleTimeString();
+}
+
+function myStop() {
+  clearInterval(myInterval);
+}
+    </script>
+    </div>
+
+</body>
+</html>
+            
