@@ -5,12 +5,16 @@
     margin: 15px auto;
 
 }
-
-    
-
 body{
     margin: 0 auto    ;
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+
+.blog{
+    justify-content: center;
+    display: flex;
+    
+    border: 5px solid #4CAF50;
 }

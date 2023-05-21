@@ -5,23 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Blog ve gia dinh</title>
 </head>
 <body>
+  <div id="app"></div>
+
+
+    <!-- ---------------- Firebase config ----------------- -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAAU4XaAdzPFIC46lkCMkDQLNzMTD6zKpE",
+            authDomain: "web-intensive-mindx.firebaseapp.com",
+            projectId: "web-intensive-mindx",
+            storageBucket: "web-intensive-mindx.appspot.com",
+            messagingSenderId: "12477481268",
+            appId: "1:12477481268:web:212c2daa6615611ab02561",
+            measurementId: "G-TFEF2G5RVQ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="./index.js" type="module"></script>  
+  
+  
+  
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Blog cua toiii</a>
+          <a class="navbar-brand" href="./index.html">Blog cua toiii</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog cuoc song</a>
+                <a class="nav-link" href="post.html">Blog cuoc song</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,14 +84,14 @@
       <div class="col-md-4">
         <img src="https://anvientv.com.vn/uploads/upload/1672721900_chup-anh-gia-dinh-4-nguoi(7).jpg" class="img-fluid rounded-start" alt="...">
       </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
+<div class="col-md-8">
+<div class="card-body">
+<h5 class="card-title">Card title</h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+</div>
+</div>
+</div>
   </div>
 
   <div class="card mb-3" style="max-width: 800px;">
@@ -110,12 +142,6 @@
 
   
 </div>
-      
-
-
-
-
-
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -130,18 +156,6 @@
           <a class="nav-link disabled">Disabled</a>
         </li>
       </ul>
-
-
-
-
-
-
-      
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

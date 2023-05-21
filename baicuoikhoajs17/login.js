@@ -1,5 +1,5 @@
 import app from "./index.js"
-import Register from "./Register.js"
+import Register from "./regterter.js"
 // import khi đến đoạn go to Register 
 
 class Login{

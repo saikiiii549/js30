@@ -4,3 +4,19 @@ display: flex;
 align-items: center;
 flex-direction: column;
 }
+.d-flex {
+    display: flex;
+}
+.centering {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction:  column;
+}
+
+.eror {
+    color: red;
+    font-size: small;
+}
