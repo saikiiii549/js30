@@ -1,4 +1,5 @@
-import Register from "./regterter.js"
+import Login from "./Login.js"
+import Register from "./register.js"
 
 
 class App {
@@ -23,6 +24,10 @@ const container = document.getElementById("app")
 
 const register = new Register()
 const login = new Login()
+
+
+
+
 
 const app = new App(container)
 app.changeActiveScreen(login)
