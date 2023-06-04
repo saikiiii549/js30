@@ -1,5 +1,5 @@
 import app from "./index.js"
-import Login from "./Login.js"
+import Login from "./login.js"
 
 // import khi đến đoạn go to Register
 
