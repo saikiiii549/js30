@@ -12,12 +12,7 @@ body{
     flex-direction: column;
 }
 
-.blog{
-    justify-content: center;
-    display: flex;
-    
-    border: 5px solid #4CAF50;
-}
+
 
 
 
@@ -123,7 +118,7 @@ body{
 
 
 
-
+--login
   body{
     background: url('../images/bg.jpeg');
     background-size: cover;
@@ -193,3 +188,73 @@ body{
 
 
 
+
+
+
+--blog
+.kPzUmj {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    position: relative;
+    background-color: rgb(255, 255, 255);}
+
+
+  .lcLvkO {
+    width: calc(75% + 16px);
+    background-color: rgb(232, 119, 34);
+    color: rgb(255, 255, 255);
+    border-radius: 1rem 1rem 0px;
+    padding: 5rem 1rem;}
+    div {
+      display: block;}
+      body {
+        font-synthesis: none;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+
+
+--father
+      .jAQJbK {
+        font-size: 14px;
+        color: rgb(232, 119, 34);
+        line-height: 18px;
+        font-weight: 500;}
+        .bVAODB {
+          margin-top: 0.5rem;
+          color: rgb(24, 48, 40);
+          margin-bottom: 1.5rem;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 31px;
+          width: 100%;}
+          .fuaHZi {
+            font-size: 1rem;
+            color: rgb(24, 48, 40);
+            line-height: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }
+        .biPeZf {
+          font-size: 1rem;
+          color: rgb(24, 48, 40);
+          line-height: 1.5rem;
+          font-weight: 300;
+          margin-bottom: 0.5rem;
+      }
+      .kSNIEC {
+        margin-top: 40px;}
+        .kSNIEC .tags-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px 8px;}
+          .eJmEzD {
+            font-size: 14px;
+            border: 1px solid rgb(232, 119, 34);
+            border-radius: 4px;
+            color: rgb(232, 119, 34);
+            white-space: nowrap;
+            padding: 4px 7px;}
+            
+        
