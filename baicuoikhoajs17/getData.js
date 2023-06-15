@@ -65,6 +65,6 @@ const createData = async (db, Object) =>
 
 
 await getData(db).then(rs => rs);
-await createData(db, "s").then(rs => rs).catch(e => e)
-
+// await createData(db, "s").then(rs => rs).catch(e => e)
+await deleteDataById(db, "eJqaWJ4qHE41rjNasp2B");
   
